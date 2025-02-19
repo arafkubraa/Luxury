@@ -3,33 +3,22 @@
 <html lang="en">
 
 <head>
-
-
     <link rel="icon" href="/media/global/logoweb.png" type="image/gif" sizes="24x24">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {% block title %} En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi HepsiOrada'da {% endblock title %}
+        {% block title %} Şıklığın ve Zarafetin Adresi Luxury {% endblock title %}
     </title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.css ' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> {% block css %} {% endblock css %}
-    <link rel="stylesheet" href="{% static 'css/slicky.css'   %}">
-    <!-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Mukta&family=Source+Sans+Pro:wght@600&display=swap');
-    </style> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    {% block css %} {% endblock css %}
+    <link rel="stylesheet" href="{% static 'css/slicky.css' %}">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
     <link rel="stylesheet" href="/static/css/fonts.css">
+
     <style>
         .Main_Emp {
-            /* border: blue solid 5px;*/
             width: 100%;
             height: auto;
             position: relative;
@@ -38,7 +27,7 @@
         
         .ui-menu {
             z-index: 15323;
-            border: 2px solid #FF6000 !important;
+            border: 2px solid #FF008C !important; /* pembe rengi */
             position: fixed !important;
             list-style: none;
             display: block;
@@ -53,7 +42,7 @@
             padding-left: 1rem;
             padding-bottom: 1rem;
         }
-        
+
         .ui-menu-item-wrapper {
             outline: 0 !important;
             border: none !important;
@@ -63,7 +52,7 @@
             font-size: 0.8rem;
             background-color: #fff !important;
         }
-        
+
         .ui-menu-item-wrapper:hover {
             background-color: #f1f1f1 !important;
             border-bottom: 1px solid rgba(228, 228, 228, 0.4) !important;
@@ -71,58 +60,50 @@
             padding: 10px !important;
             font-size: 0.8rem;
         }
-        
+
         .suggestion-result-title {
             margin-bottom: 11px;
             margin-top: -15px !important;
             margin-left: 10px;
         }
-        
+
         .suggestion-title {
-            color: #FF6000;
+            color: #FF008C; /* pembe rengi */
             font-size: 0.9rem;
             font-weight: bold;
             font-family: 'Cairo', sans-serif;
         }
     </style>
-
-
 </head>
 
 <body>
     {% include "includes/navbar.html" %}
-    <div class="container Main_Emp ">
+    <div class="container Main_Emp">
         {% if messages %}
         <div class="messages">
-            {% for message in messages %} {% if message.tags == "info" %}
-            <div class="alert alert-danger">
-                {{message}}
-            </div>
-            {% else %}
-            <div class="alert alert-{{message.tags}}">
-                {{message}}
-            </div>
-            {% endif %} {% endfor %}
+            {% for message in messages %}
+                {% if message.tags == "info" %}
+                    <div class="alert alert-danger">
+                        {{message}}
+                    </div>
+                {% else %}
+                    <div class="alert alert-{{message.tags}}">
+                        {{message}}
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
-
-        {% endif %} {% block content %} {% endblock content %}
+        {% endif %}
+        {% block content %} {% endblock content %}
     </div>
 </body>
-
 
 {% block script %} {% endblock script %}
 
 <script src="{% static 'js/jquery3.5.1.js ' %}"></script>
 <script src="{% static 'js/bootstrap.js' %}"></script>
-
-
-
 <script src="{% static 'js/slick.min.js' %}"></script>
-
 <script src="/static/js/slider.js"></script>
-
-
-
 
 <script>
     var messages = $(".messages ")
@@ -132,7 +113,6 @@
         setTimeout(() => {
             messages.css('display', 'none')
         }, 9000)
-
     }
 </script>
 
@@ -145,7 +125,6 @@
             const cookies = document.cookie.split(';');
             for (let i = 0; i < cookies.length; i++) {
                 const cookie = cookies[i].trim();
-                // Does this cookie string begin with the name we want?
                 if (cookie.substring(0, name.length + 1) === (name + '=')) {
                     cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                     break;
@@ -157,53 +136,37 @@
     const csrftoken = getToken('csrftoken');
 
     function getCookie(name) {
-
         var cookieArr = document.cookie.split(";");
 
         for (var i = 0; i < cookieArr.length; i++) {
-
             var cookiePair = cookieArr[i].split("=");
 
-
             if (name == cookiePair[0].trim()) {
-
                 return decodeURIComponent(cookiePair[1]);
-
             }
         }
         return null
     }
 
-
     var cart = JSON.parse(getCookie('cart'))
 
     if (cart == undefined) {
         cart = {}
-
-
         document.cookie = 'cart=' + JSON.stringify(cart) + ';domain=;path=/'
-
-
     }
 </script>
-
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script>
     $(function() {
-
         $("#tagss").autocomplete({
             source: '{% url "autocomplete" %}',
-
             open: function(event, ui) {
                 $('.ui-autocomplete').prepend("<div class='suggestion-result-title'><span class='suggestion-title main'>İlgili Sonuçlar</span></div>")
             },
-
         })
-
-
     })
 </script>
 

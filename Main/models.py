@@ -117,7 +117,8 @@ class Product(models.Model):
     
     @property 
     def cargotime(self) :
-        locale.setlocale(locale.LC_ALL, 'Turkish_Turkey.1254')
+        #locale.setlocale(locale.LC_ALL, 'Turkish_Turkey.1254')
+        locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
         now = datetime.datetime.now()
         extra = random.randint(2,5)
         target = now +datetime.timedelta(extra)
@@ -126,7 +127,8 @@ class Product(models.Model):
         return str(day) + " " + month
 
     def forwardcargotime(self) :
-        locale.setlocale(locale.LC_ALL, 'Turkish_Turkey.1254')
+        #locale.setlocale(locale.LC_ALL, 'Turkish_Turkey.1254')
+        locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
 
         now = datetime.datetime.now()
 

@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% load static %} {% block title %} {{request.GET.q}} - HepsiOrada {% endblock title %} {% block script %}
+{% extends "base.html" %} {% load static %} {% block title %} {{request.GET.q}} - Luxury {% endblock title %} {% block script %}
 <script src="{% static 'js/carta.js'  %}"></script>
 {% endblock script %} {% block css %}
 <link rel="stylesheet" href="{% static 'css/index.css'   %}"> {% endblock css %} {% block content %} {% include "includes/addproductalert.html" %}
@@ -9,7 +9,7 @@
 <br><br> {% if request.GET.q %}
 <p style="font-family: 'RocknRoll One', sans-serif;" class="search-result"><b> {{request.GET.q}} </b> ile ilgili <span> {{products.count}}   </span> tane ürün bulduk</p>
 <br> <br>{% else %}
-<h3 style="font-family: 'RocknRoll One', sans-serif; text-align :center">Süper Fiyat, Süper Teklif</h3>
+<h3 style="font-family: 'RocknRoll One', sans-serif; text-align :center"> Eşsiz Seçimler İçin Doğru Yer</h3>
 <br> {% endif %}
 
 
@@ -63,7 +63,7 @@
 <br> {% if liste|length > 3 %}
 
 
-<h4 class="pl-4">En Son Gezdiğiniz Ürünler</h4>
+<h4 class="pl-4">Bu Ürünlerden Gözünüzü Alamadınız</h4>
 
 
 
@@ -123,7 +123,7 @@
 
         <div class="alert alert-info" style="width: 100% !important">
             <h6>
-                Son goruntulenen bir ürün yok
+                Son görüntülenen bir ürün yok
 
             </h6>
         </div>

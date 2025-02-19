@@ -27,7 +27,7 @@ whitenoise==5.0.1
 sqlparse==0.3.0
 pytz==2019.3
 python-decouple==3.3 
-asgiref==3.2.3 
+asgiref>=3.2.10
 psycopg2==2.8.4
 phonenumberslite==8.12.11
 django-phonenumber-field[phonenumberslite]==5.0.0
