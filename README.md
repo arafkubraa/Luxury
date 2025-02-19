@@ -1,6 +1,6 @@
 <h1 align="center">Luxury</h1>
 
- <h5 align="center"> Luxury is an open-source ecommerce website built on the Django Web Framework.</h5>
+<h5 align="center"> Luxury is an open-source ecommerce website built on the Django Web Framework.</h5>
 <!--  ## Kurulum  <br/> -->
  
 ## Installation
@@ -56,35 +56,35 @@ Windows: `venv\Scripts\activate `
 
 <br/>
 <p align="center">
-**![Sepetim Kısmı](screenshots/Ekran%20Resmi%202025-02-20%2000.23.50.png)**
+**![Sepetim Kısmı](screenshots/sepetim.png)**
 </p>
 
 <br/>
 
 <p align="center">
-**![Kategoriler Kısmı](screenshots/Ekran%20Resmi%202025-02-20%2000.23.06.png)**
+**![Kategoriler Kısmı](screenshots/kategoriler.png)**
 </p>
 
 <br/>
 
 <p align="center">
-**![Anasayfa](screenshots/Ekran%20Resmi%202025-02-20%2000.22.58.png)**
+**![Anasayfa](screenshots/anasayfa1.png)**
 </p>
 
 <br/>
 
 <p align="center">
-**![Anasayfa](screenshots/Ekran%20Resmi%202025-02-20%2000.22.50.png)**
+**![Anasayfa](screenshots/anasayfa2.png)**
 </p>
 
 <br/>
 
 <p align="center">
-**![Ürün Açıklaması](screenshots/Ekran%20Resmi%202025-02-20%2000.23.43.png)**
+**![Ürün Açıklaması](screenshots/aciklama.png)**
 </p>
 
 <br/>
 
 <p align="center">
-**![Markalar Kısmı](screenshots/Ekran%20Resmi%202025-02-20%2000.23.21.png)**
+**![Markalar Kısmı](screenshots/markalar.png)**
 </p>
