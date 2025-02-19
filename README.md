@@ -53,38 +53,16 @@ Windows: `venv\Scripts\activate `
   -->
  <br/>
 
+## 📸 Screenshots
 
-<br/>
-<p align="center">
-**![Sepetim Kısmı](screenshots/sepetim.png)**
-</p>
+![Sepetim Kısmı](screenshots/sepetim.png)
 
-<br/>
+![Kategoriler Kısmı](screenshots/kategoriler.png)
 
-<p align="center">
-**![Kategoriler Kısmı](screenshots/kategoriler.png)**
-</p>
+![Anasayfa](screenshots/anasayfa1.png)
 
-<br/>
+![Anasayfa 2](screenshots/anasayfa2.png)
 
-<p align="center">
-**![Anasayfa](screenshots/anasayfa1.png)**
-</p>
+![Ürün Açıklaması](screenshots/aciklama.png)
 
-<br/>
-
-<p align="center">
-**![Anasayfa](screenshots/anasayfa2.png)**
-</p>
-
-<br/>
-
-<p align="center">
-**![Ürün Açıklaması](screenshots/aciklama.png)**
-</p>
-
-<br/>
-
-<p align="center">
-**![Markalar Kısmı](screenshots/markalar.png)**
-</p>
+![Markalar Kısmı](screenshots/markalar.png)
